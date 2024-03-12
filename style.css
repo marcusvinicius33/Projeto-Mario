@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+}
+header {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin: 30px;
+}
+header a {
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+header a:hover {
+    color: #C51111;
+    font-size: 28px;
+    transition: 0.3s ease-in-out;
+}
+.logo-header {
+    height: 60px;
+}
+.caixa-mae {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 100px;
+    height: 100vh;
+}
+.logo-mario {
+    height: 200px;
+}
+.caixa-principal {
+    width: 40%;
+}
+.caixa-video {
+    position: fixed;
+    top: 0;
+    z-index: -1;
+}
+video {
+    min-height: 100%;
+    min-width: 100%;
+    position: fixed;
+    top: 0;
+}
+.mascara {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    position: fixed;
+    top: 0;
+}
+p {
+    color: white;
+    font-size: 24px;
+}
+button {
+    color: white;
+    background-color: #C51111;
+    border-radius: 3px;
+    border: none;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 30px;
+}
+button:hover {
+    background-color: #dc1414;
+    width: 205px;
+    height: 55px;
+    font-size: 15px;
+    transition: 0.1s ease-in-out;
+}
+.img-mario-luigi {
+    height: 500px;
+}
+.link-whatsapp img {
+    height: 60px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+.mascara-formulario {
+    visibility: hidden; /*visibilidade: oculto ou escondido*/
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    transition: visibility 1s ease-in-out;
+}
+.formulario-fale-conosco {
+    background-color: white;
+    display: flex;
+    gap: 15px;
+    /*o gap da um distanciamento entre os itens, o mesmo só pode ser usado quando a função "display: flex" estiver habilitada.*/
+    flex-direction: column;
+    position: fixed;
+    top: 30%;
+    left: -300px;
+    padding: 20px;
+    border-radius: 10px;
+    transition: left 1s ease-in-out;
+}
+input {
+    height: 40px;
+    border-radius: 7px;
+    border: 2px solid rgb(13, 148, 238);
+    padding-left: 5px;
+    /*desgruda o placeholder, a frase, que está dentro do input.*/
+    outline-color: rgb(10, 173, 23);
+}
+textarea {
+    width: 270px;
+    height: 100px;
+    border-radius: 7px;
+    border: 2px solid rgb(13, 148, 238);
+    padding-left: 5px;
+    outline-color: rgb(10, 173, 23);
+}
+.button-formulario:hover {
+    background-color: #dc1414;
+    width: 200px;
+    height: 50px;
+    font-size: 13px;
+    transition: 0.1s ease-in-out;
+}
